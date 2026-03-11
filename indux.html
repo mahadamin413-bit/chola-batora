@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chola Botora</title>
+  <link rel="stylesheet" href="script.css">
+<link rel="stylesheet" href="style.js">
+
+<body>
+
+<!-- NAVBAR -->
+<section id="header">
+  <div class="header container">
+    <div class="nav-bar">
+      <div class="brand">
+        <h1><span>Chola </span>Botora</h1>
+      </div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bars"></div>
+          <div class="bars"></div>
+          <div class="bars"></div>
+        </div>
+        <ul>
+          <li><a href="#hero" data-after="home">Home</a></li>
+          <li><a href="#photos" data-after="photos">Photos</a></li>
+          <li><a href="#branches" data-after="branches">Branches</a></li>
+          <li><a href="#contact" data-after="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <h2>Delicious Chole Bhature</h2>
+    <p>Experience the authentic taste of North Pakistan cuisine — crispy Bhature with spicy Chole.</p>
+    <a href="#contact" class="btn">Order Now</a>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section id="photos">
+  <h2 class="section-title">Our Dishes</h2>
+  <div class="photo-gallery">
+    <div class="photo-card">
+      <img src="image/chola.png" alt="Chole Bhature">
+      <h3>Chole Bhature</h3>
+    </div>
+    <div class="photo-card">
+      <img src="image/paneer masala.png" alt="Paneer Masala">
+      <h3>Paneer Masala</h3>
+    </div>
+    <div class="photo-card">
+      <img src="image/lassi.png" alt="Lassi">
+      <h3>Lassi</h3>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHES -->
+<section id="branches">
+  <h2 class="section-title">Our Branches</h2>
+  <div class="branch-cards">
+    <div class="card">Karachi</div>
+    <div class="card">Lahore</div>
+    <div class="card">Islamabad</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p>Email: info@cholabotora.com | Phone: +92 300 1234567</p>
+  <a href="mailto:info@cholabotora.com" class="btn">Email Us</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Chola Botor coder mahad . all right reserved.</p>
+</footer>
+
+<script>
+  // Simple hamburger toggle
+  const hamburger = document.querySelector(".hamburger");
+  const navList = document.querySelector(".nav-list ul");
+  hamburger.addEventListener("click", () => {
+    navList.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
