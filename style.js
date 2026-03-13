@@ -1,37 +1,13 @@
-// ===== Hamburger Menu Toggle =====
+// Hamburger menu toggle
 const hamburger = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav-list ul");
 
-if (hamburger) {
-  hamburger.addEventListener("click", () => {
-    navList.classList.toggle("active");
-    hamburger.classList.toggle("toggle");
-  });
-}
-
-// ===== Close Menu on Link Click =====
-document.querySelectorAll(".nav-list a").forEach(link => {
-  link.addEventListener("click", () => {
-    navList.classList.remove("active");
-    hamburger.classList.remove("toggle");
-  });
+hamburger.addEventListener("click", () => {
+  navList.classList.toggle("active");
+  hamburger.classList.toggle("toggle");
 });
 
-// ===== Smooth Scroll =====
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-  });
-});
-
-// ===== Fade-in Animation on Scroll =====
+// Fade-in animation on scroll
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
